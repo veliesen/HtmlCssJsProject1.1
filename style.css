@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+*{ 
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Open Sans','sans-serif';
+}
+body{
+    background: #E3F2FD;
+}
+.container{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.color{
+    background: #fff;
+    list-style: none;  
+    margin:13px;
+    padding:7px;
+    cursor:pointer;
+    text-align:center;
+    border-radius:6px;
+    box-shadow: 0 10px 20px rgba(52,87,220,0.08);
+    transition: transform 0.3s ease;
+}
+.color:active{
+    transform: scale(0.9);
+}
+.color:hover{
+    filter: brightness(110%);
+}
+.rect-box{
+    width: 185px;
+    height: 188px;
+    border-radius: 5px;
+    background: #8A6CFF;
+}
+.hex-value{
+    display: block;
+    color: #444;
+    margin: 12px 0 8px;   
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.refresh-btn{
+    position: relative;
+    margin-top: 20px; 
+    margin-left: 45%;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding:12px 20px;
+    background: #8A6CFF;
+    box-shadow: 0 10px 20px rgba(52,87,220,0.02);
+    border: 2px solid #fff;
+    transition: transform 0.2s ease;
+    transform: translateX(-5%);
+}
+.refresh-btn:hover{
+    filter: brightness(110%);
+}
+.refresh-btn:active{
+    transform: scale(0.9);
+}
+@media screen and (max-width:510px) {
+    .container {
+        margin:10px;
+    }
+    .color{
+        width: 100px;
+        height: 103px;
+    }
+    .hex-value{
+        font-size: 1rem;
+    }
+    
+}
